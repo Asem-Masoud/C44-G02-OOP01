@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Reflection.Emit;
 using System.Security.Claims;
 using System.Security.Cryptography;
+using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Demo_OOP01
@@ -115,7 +116,15 @@ namespace Demo_OOP01
 
             #endregion
 
+            #region Q2P02
 
+            //2. Develop a Class to represent the Hiring Date Data:
+            //● Consisting of fields to hold the day, month and Years.
+
+            //HiringDate hiringDate = new HiringDate(15, 3, 2022);
+            //Console.WriteLine($"Hiring Date: {hiringDate}");
+
+            #endregion
         }
 
 
