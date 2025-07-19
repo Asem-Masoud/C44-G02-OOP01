@@ -1,4 +1,6 @@
-﻿namespace Demo_OOP01
+﻿using System;
+
+namespace Demo_OOP01
 {
     /*
      * Class
@@ -129,26 +131,52 @@
 
             #region 04 Encapsulation using Properties
 
-            Employee E01 = new Employee();
+            //Employee E01 = new Employee();
 
-            E01.Id = 1;
+            //E01.Id = 1;
 
-            E01.Name = "Ahmed";
+            //E01.Name = "Ahmed";
 
-            E01.Salary = 120;
+            //E01.Salary = 120;
 
-            E01.Address = "Cairo";
+            //E01.Address = "Cairo";
 
-            Console.WriteLine(E01.Id);
-            Console.WriteLine(E01.Name);
-            Console.WriteLine(E01.Salary);
-            Console.WriteLine(E01.Address);
+            //Console.WriteLine(E01.Id);
+            //Console.WriteLine(E01.Name);
+            //Console.WriteLine(E01.Salary);
+            //Console.WriteLine(E01.Address);
 
 
 
             #endregion
 
+            #region 05 Indexer
 
+            //Indexer: Special Property
+
+            // PhoneBook :
+            Phonebook phoneBook = new Phonebook(3);
+
+            phoneBook.AddPerson("Ahmed", 1234567890, 0);
+            phoneBook.AddPerson("Ali", 1234568891, 1);
+            phoneBook.AddPerson("Asem", 1234768892, 2);
+
+            //Console.WriteLine(phoneBook.GetNumber("Ahmed")); // Output: 1234567890  
+            //Console.WriteLine(phoneBook.GetNumber("Mohamed")); // Output: -1 -> Not Found
+
+            //phoneBook.UpdateNumber("Ahmed", 9876543210);
+            //Console.WriteLine(phoneBook.GetNumber("Ahmed")); // Output: 9876543210
+
+            //Console.WriteLine(phoneBook.GetName(1234568891)); // Output: Ali
+
+            //phoneBook.UpdateName(1234568891, "Asem");
+            //Console.WriteLine(phoneBook.GetName(1234568891)); // Output: Asem
+
+            //9:55
+
+            #endregion
+
+            //9:55
         }
     }
 }
