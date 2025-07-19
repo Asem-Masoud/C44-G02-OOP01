@@ -71,17 +71,64 @@
              */
             #endregion
 
-
-
             #region 03 Encapsulation using Setter Getter Methods
 
             //  1. Encapsulation: Separate the data (attributes) Definition From Its Use
+            //  [Setter Getter Method - Properties] .
             //  For Class Or Struct. 
+
+            //Employee -> Id, Name, Salary
+
+
+            // 1. End User Access data itself
+            // 2. No Data Validation
+            // 3. No Read Only Field
+
+
+            //Apply Encapsulation
+            // 1. Make All Attributes Private
+            // 2. Access Data Through :
+            // 2.1. Setter Getter Method
+            // 2.2 . Properties
+            //Employee E01 = new Employee();
+            //E01.id = 1;
+            //E01.name = "Ahmed";
+            //E01.salary = 12000;
+
+            //Console.WriteLine(E01.id);
+            //Console.WriteLine(E01.name);
+            //Console.WriteLine(E01.salary);
+
+            // After  the Setter Getter Method
+            //E01.SetId(1);
+            //E01.SetName("Ahmed");
+            //E01.SetSalary(12000);
+
+            //Console.WriteLine(E01.GetId());
+            //Console.WriteLine(E01.GetName());
+            //Console.WriteLine(E01.GetSalary());
+
+            // After Constructor
+
+            //Employee E01 = new Employee(1, "Ahmed", -12000);
+
+            //Console.WriteLine(E01.GetId());
+            //Console.WriteLine(E01.GetName());
+            //Console.WriteLine(E01.GetSalary());
+
+
+            //After To String Method
+            //Employee E01 = new Employee(1, "Ahmed", -12000);
+            //Console.WriteLine(E01);
+
+            // After Comment SetId
+            // Id : Read Only Attribute
+            //E01.GetId();
 
             #endregion
 
 
-            //03 -> 1:50
+
 
         }
     }
