@@ -1,9 +1,13 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Reflection.Emit;
+using System.Security.Claims;
+using System.Security.Cryptography;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Demo_OOP01
 {
-    internal class Program
+    internal class _Program
     {
 
         static void Main()
@@ -14,6 +18,8 @@ namespace Demo_OOP01
             ////Write a C# program that takes two points as input from the user and calculates the distance between them. 
 
 
+
+            /////////////////////////////////////////////////
             ////Console.WriteLine("Enter coordinates for the first point:");
             ////Console.Write("X1: ");
             ////double x1 = double.Parse(Console.ReadLine());
@@ -25,7 +31,7 @@ namespace Demo_OOP01
             ////double x2 = double.Parse(Console.ReadLine());
             ////Console.Write("Y2: ");
             ////double y2 = double.Parse(Console.ReadLine());
-
+            /////////////////////////////////////////////////
             //Console.WriteLine("Enter first point (X Y):");
             //string[] parts1 = Console.ReadLine().Split();
             //int x1 = Convert.ToInt32(parts1[0]);
@@ -79,7 +85,39 @@ namespace Demo_OOP01
 
             #endregion
 
+            #region Q1P02
+
+            //1. Design and implement a Class for the employees in a company:
+            // Notes:
+            //● Employee is identified by an ID, Name, security level, salary, hire date and Gender.
+            //● We need to restrict the Gender field to be only M or F[Male or Female]
+            //● Assign the following security privileges to the employee(guest,Developer, secretary and DBA) in a form of Enum.
+            //● We want to provide the Employee Class to represent Employee data in a string Form(override ToString()),
+            //display employee salary in a currency format [Use String.Format() Function].
+
+
+            //Employee emp1 = new Employee(101, "John Smith", SecurityLevel.Developer, 75000.50m,
+            //        new DateTime(2022, 3, 15), 'M');
+
+            //Employee emp2 = new Employee(102, "Sarah Johnson", SecurityLevel.DBA, 85000.00m,
+            //    new DateTime(2021, 8, 10), 'F');
+
+            //Employee emp3 = new Employee(103, "Mike Wilson", SecurityLevel.Secretary, 45000.75m,
+            //    new DateTime(2023, 1, 20), 'M');
+
+            //Employee emp4 = new Employee(104, "Lisa Brown", SecurityLevel.Guest, 35000.00m,
+            //    new DateTime(2023, 6, 5), 'F');
+
+            //Console.WriteLine(emp1.ToString());
+            //Console.WriteLine(emp2.ToString());
+            //Console.WriteLine(emp3.ToString());
+            //Console.WriteLine(emp4.ToString());
+
+            #endregion
+
 
         }
+
+
     }
 }
