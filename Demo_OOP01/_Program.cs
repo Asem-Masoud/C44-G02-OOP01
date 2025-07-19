@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics.Metrics;
 using System.Reflection.Emit;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -125,6 +126,32 @@ namespace Demo_OOP01
             //Console.WriteLine($"Hiring Date: {hiringDate}");
 
             #endregion
+
+            #region Q3P02
+
+            //Create an array of Employees with size three a DBA, Guest and the third one is security officer who have full permissions. (Employee [] EmpArr;)
+            //Notes:
+            //● Implement All the Necessary Member Functions on the Class(Getters, Setters)
+            //● Define all the Necessary Constructors for the Class
+            //● Allow NO RUNTIME errors if the user inputs any data
+            //● Write down all the necessary Properties(Instead of setters and getters)
+
+            //// Create array of employees
+            //Employee2[] EmpArr = new Employee2[3];
+
+            //EmpArr[0] = new Employee2(1, "Ali", "DBA", Permissions.Read | Permissions.Write);
+            //EmpArr[1] = new Employee2(2, "Omar", "Guest", Permissions.Read);
+            //EmpArr[2] = new Employee2(3, "Sara", "Security Officer", Permissions.Full);
+
+            //// Display info
+            //foreach (var emp in EmpArr)
+            //{
+            //    emp.DisplayInfo();
+            //}
+
+            #endregion
+
+
         }
 
 

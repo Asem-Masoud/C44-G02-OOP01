@@ -38,7 +38,7 @@ namespace Demo_OOP01
         {
             Id = id;
             Name = name;
-            securityLevel = securityLevel;
+            Security = securityLevel;
             Salary = salary;
             HireDate = hireDate;
             Gender = gender;
