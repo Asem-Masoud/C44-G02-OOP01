@@ -127,7 +127,26 @@
 
             #endregion
 
+            #region 04 Encapsulation using Properties
 
+            Employee E01 = new Employee();
+
+            E01.Id = 1;
+
+            E01.Name = "Ahmed";
+
+            E01.Salary = 120;
+
+            E01.Address = "Cairo";
+
+            Console.WriteLine(E01.Id);
+            Console.WriteLine(E01.Name);
+            Console.WriteLine(E01.Salary);
+            Console.WriteLine(E01.Address);
+
+
+
+            #endregion
 
 
         }
