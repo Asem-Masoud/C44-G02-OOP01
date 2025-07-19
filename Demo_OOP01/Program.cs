@@ -73,6 +73,16 @@
 
 
 
+            #region 03 Encapsulation using Setter Getter Methods
+
+            //  1. Encapsulation: Separate the data (attributes) Definition From Its Use
+            //  For Class Or Struct. 
+
+            #endregion
+
+
+            //03 -> 1:50
+
         }
     }
 }
