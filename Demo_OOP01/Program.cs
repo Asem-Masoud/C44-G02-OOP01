@@ -182,6 +182,45 @@ namespace Demo_OOP01
 
             #endregion
 
+            #region 06 Static Class
+
+            //// Class : Reference Type: HEAP
+
+            //// Car : Id Model Speed
+
+
+            //Car C01;
+            //// Declare For Reference From Type 'Car'
+            //// C01: Can Refer to Object From Type 'Car' or Any Class Inherited From 'Car'
+            //// C01: Refer To Null
+
+            ////Console.WriteLine(C01); // Unassigned
+
+            //// 8 Bytes will be Allocated at STACK for the Reference 'C01'
+            //// 0 Bytes will be Allocated at HEAP
+
+
+
+            ////C01 = new Car(1);
+            ////C01 = new Car(1, "XZC");
+            //C01 = new Car(1, "XZC", 500);
+
+            //// new 
+            //// 1. Allocate the number of required bytes at HEAP for the object 
+            //// 2. Initialized the Allocated bytes with the default value of the datatype
+            //// 3. Call User-Defined Constructor if exists
+            //// 4. Assign the object To the Reference
+
+            ////Console.WriteLine(C01.Id);
+            ////Console.WriteLine(C01.Model);
+            ////Console.WriteLine(C01.Speed);
+
+            //Console.WriteLine(C01);
+
+
+
+            #endregion
+
         }
     }
 }
