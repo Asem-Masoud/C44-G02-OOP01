@@ -52,7 +52,24 @@
             //Console.WriteLine(P01);//(1,2) 
             #endregion
 
+            #region 02 OOP Overview
 
+            // OOP: Object Oriented Programming
+            // Programming Paradigm
+            // OOP : the Paradigm Use For Build Any Business 
+
+            // Class : Blueprint of Object
+            // Object : Specific Instance of Class
+
+            // 4 Pillars of OOP
+            /*
+             *  1. Encapsulation: Hiding the internal state and requiring all interaction to be performed through an object's methods.
+             *  2. Inheritance: Mechanism where a new class can inherit properties and methods from an existing class.
+             *  3. Polymorphism: Ability to present the same interface for different underlying data types.
+             *  4. Abstraction: Hiding complex implementation details and showing only the essential features of the object.
+             *  محتاج أأكد التعريفات دي
+             */
+            #endregion
 
 
 
