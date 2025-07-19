@@ -17,6 +17,52 @@ namespace Demo_OOP01
             numbers = new long[size];
         }
 
+        //Indexer
+        //-------------------------
+        public long this[string name]
+        {
+            get // == GetNumber
+            {
+                for (int i = 0; i < names.Length; i++)
+                {
+                    if (names[i] == name)
+                        return numbers[i];
+                }
+                return -1; // Return -1 if the name is not found
+            }
+            set // == UpdateNumber
+            {
+                for (int i = 0; i < names.Length; i++)
+                {
+                    if (names[i] == name)
+
+                        numbers[i] = value;
+                }
+            }
+        }
+
+
+        public string this[long number]
+        {
+            get // == GetName
+            {
+                for (int i = 0; i < numbers.Length; i++)
+                {
+                    if (numbers[i] == number)
+                        return names[i];
+                }
+                return null; // Return null if the number is not found
+            }
+            set // == UpdateName
+            {
+                for (int i = 0; i < names.Length; i++)
+                {
+                    if (numbers[i] == number)
+                        names[i] = value;
+                }
+            }
+        }
+        //------------------------
 
         public void AddPerson(string name, long number, int index)
         {
@@ -25,25 +71,25 @@ namespace Demo_OOP01
 
         }
 
-        public long GetNumber(string name)
-        {
-            for (int i = 0; i < names.Length; i++)
-            {
-                if (names[i] == name)
-                    return numbers[i];
-            }
-            return -1; // Return -1 if the name is not found
-        }
+        //public long GetNumber(string name)
+        //{
+        //    for (int i = 0; i < names.Length; i++)
+        //    {
+        //        if (names[i] == name)
+        //            return numbers[i];
+        //    }
+        //    return -1; // Return -1 if the name is not found
+        //}
 
-        public void UpdateNumber(string name, long newNumber)
-        {
-            for (int i = 0; i < names.Length; i++)
-            {
-                if (names[i] == name)
-                    numbers[i] = newNumber;
+        //public void UpdateNumber(string name, long newNumber)
+        //{
+        //    for (int i = 0; i < names.Length; i++)
+        //    {
+        //        if (names[i] == name)
+        //            numbers[i] = newNumber;
 
-            }
-        }
+        //    }
+        //}
 
         public string GetName(long number)
         {

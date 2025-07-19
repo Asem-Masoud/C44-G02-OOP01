@@ -152,31 +152,36 @@ namespace Demo_OOP01
 
             #region 05 Indexer
 
-            //Indexer: Special Property
+            ////Indexer: Special Property
 
-            // PhoneBook :
-            Phonebook phoneBook = new Phonebook(3);
+            //// PhoneBook :
+            //Phonebook phoneBook = new Phonebook(3);
 
-            phoneBook.AddPerson("Ahmed", 1234567890, 0);
-            phoneBook.AddPerson("Ali", 1234568891, 1);
-            phoneBook.AddPerson("Asem", 1234768892, 2);
+            //phoneBook.AddPerson("Ahmed", 1234567890, 0);
+            //phoneBook.AddPerson("Ali", 1234568891, 1);
+            //phoneBook.AddPerson("Asem", 1234768892, 2);
 
-            //Console.WriteLine(phoneBook.GetNumber("Ahmed")); // Output: 1234567890  
-            //Console.WriteLine(phoneBook.GetNumber("Mohamed")); // Output: -1 -> Not Found
+            ////Console.WriteLine(phoneBook.GetNumber("Ahmed")); // Output: 1234567890  
+            ////Console.WriteLine(phoneBook.GetNumber("Mohamed")); // Output: -1 -> Not Found
 
-            //phoneBook.UpdateNumber("Ahmed", 9876543210);
-            //Console.WriteLine(phoneBook.GetNumber("Ahmed")); // Output: 9876543210
+            ////phoneBook.UpdateNumber("Ahmed", 9876543210);
+            ////Console.WriteLine(phoneBook.GetNumber("Ahmed")); // Output: 9876543210
 
-            //Console.WriteLine(phoneBook.GetName(1234568891)); // Output: Ali
+            ////Console.WriteLine(phoneBook.GetName(1234568891)); // Output: Ali
 
-            //phoneBook.UpdateName(1234568891, "Asem");
-            //Console.WriteLine(phoneBook.GetName(1234568891)); // Output: Asem
+            ////phoneBook.UpdateName(1234568891, "Asem");
+            ////Console.WriteLine(phoneBook.GetName(1234568891)); // Output: Asem
 
-            //9:55
+            //Console.WriteLine(phoneBook["Ahmed"]);
+            //// Indexer
+            //phoneBook["Ahmed"] = 11111;
+
+            //Console.WriteLine(phoneBook["Ahmed"]); // Output: 11111
+
+            //Console.WriteLine(phoneBook[11111]); // Output: Ahmed
 
             #endregion
 
-            //9:55
         }
     }
 }
