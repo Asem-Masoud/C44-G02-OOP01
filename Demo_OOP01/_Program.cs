@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Demo_OOP01
+namespace Ass_OOP01
 {
     internal class _Program
     {
